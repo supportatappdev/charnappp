@@ -21,32 +21,7 @@ app.confi_newg(function ($routeProvider) {
 	    templateUrl: 'projects.html',
 		controller: 'ProjListCtrl'
 	})
-	.when('/custlist',{
-	    templateUrl: 'customer.html',
-		controller: 'CustCtrl'
-	}).when('/grouplist',{
-	    templateUrl: 'group.html',
-		controller: 'GroupCtrl'
-	}).when('/rsclist',{
-	    templateUrl: 'resource.html',
-		controller: 'RscCtrl'
-	})
-	.when('/tasklist',{
-	    templateUrl: 'tasks.html',
-		controller: 'TaskListCtrl'
-	})
-	.when('/tasklist/:projId',{
-	    templateUrl: 'tasks.html',
-		controller: 'TaskListCtrl'
-	})/*
-	.when('/editTask/:taskId',{
-	    templateUrl: 'tasks.html',
-		controller: 'TaskListCtrl'
-	})*/
-	.when('/login', {
-		templateUrl: 'views/login.html',
-		controller: 'LoginCtrl'
-	})
+	
 	.otherwise({
 		redirectTo: '/'
 	});
